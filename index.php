@@ -3,6 +3,8 @@
 <h1> DELTA TASK 3</h1>
 HIT COUNTER:
 <?php
+//create a file counter.txt and put 0 in it and give write and read permission.
+//create another file ip.txt and give write and read permission.
 $file = fopen('counter.txt', r);
 $dat = fread($file, filesize('counter.txt'));
 echo $dat+1;
